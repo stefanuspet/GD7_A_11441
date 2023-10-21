@@ -140,7 +140,7 @@
                                     17<i class="fa-solid fa-check-to-slot" style="color: #ffffff; margin-right: 10px"></i>
                                     Available seats : {{ $item->stock}}</p>
                                 <a style="float:right" href="#" class="btn btn-outline btn-book">Select Ticket</a>
-                                <p style="color: #D6B56E; padding-top: 10px;">IDR {{ $item->price }}</p>
+                                <p style="color: #D6B56E; padding-top: 10px;">IDR {{ number_format($item->price, 0, ',', '.') }}</p>
                             </div>
                         </div>
                     </div>
@@ -150,4 +150,5 @@
             </div>
         </div>
     </div>
-    @endsection
+</div>
+@endsection
