@@ -128,7 +128,7 @@
             @foreach ($merchandises as $item)
             <div class="col-md-4 mb-4">
                 <div class="card align-items-center justify-content-center" style="max-width: 310px; height: 310px;">
-                    <img src="https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bd3c.png" alt="" width="50%">
+                    <img src="{{asset('images/tom.png')}}" alt="img" width="50%">
                 </div>
                 <div class="card-body" style="padding-top: 10px;">
                     <p class="m-0 p-0">{{ $item->name }}</p>
